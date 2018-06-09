@@ -18,7 +18,7 @@ class App extends Component {
   }
   handleSubmit(e){
     e.preventDefault();
-    window.open(this.tweetUrl + this.state.text);
+    window.open(`${this.tweetUrl}${this.state.text}`);
   }
   handleChange(e){
     e.preventDefault();
