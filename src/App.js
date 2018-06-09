@@ -46,10 +46,10 @@ class App extends Component {
           <h1 className="text-center">Jaden Case</h1>
         </header>
         <form className="form-inline justify-content-center mt-3">
-          <div className="form-group col-md-9">
+          <div className="form-group col-sm-8">
             <input type="text" onChange={this.handleChange} className="form-control w-100" id="inputText" placeholder="Tweet" />
           </div>
-          <div className="form-group col-md-3">
+          <div className="form-group col-sm-4">
             <button className="btn btn-primary btn-block" target="_blank"  onClick={this.handleSubmit}>Tweet</button>
           </div>
 
