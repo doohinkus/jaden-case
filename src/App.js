@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Button from './components/button';
 import Jaden from './components/jaden';
-
+import Form from './components/form';
+import Header from './components/header';
 
 class App extends Component {
   constructor(){
@@ -35,17 +36,8 @@ class App extends Component {
   render() {
     return (
       <div className="container mx-auto">
-        <header>
-          <h1 className="text-center">Jaden Case</h1>
-        </header>
-        <form className="form-inline justify-content-center mt-3">
-          <div className="form-group col-sm-8">
-            <input type="text" onChange={this.handleChange} className="form-control w-100" id="inputText" placeholder="Tweet" />
-          </div>
-          <div className="form-group col-sm-4">
-            <Button action={this.handleSubmit} text="Tweet" />
-          </div>
-        </form>
+        <Header text="Jaden Case" />
+        <Form change={this.handleChange} submit={this.handleSubmit} />
         <Jaden text={this.state.text} warning={this.state.warning} />
       </div>
     );
