@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import jaden from './img/jaden-cutout.png';
 import Button from './components/button';
+import Jaden from './components/jaden';
+
 
 class App extends Component {
   constructor(){
@@ -32,12 +33,6 @@ class App extends Component {
   }
 
   render() {
-    const warning = {
-      color: 'red',
-      fontWeight: 'bold',
-      display:'block'
-    }
-
     return (
       <div className="container mx-auto">
         <header>
@@ -51,15 +46,7 @@ class App extends Component {
             <Button action={this.handleSubmit} text="Tweet" />
           </div>
         </form>
-        <div className="jaden">
-          <p className="text-center">
-            <img src={jaden} alt="jaden smith" className="img-fluid img-thumbnail clearbg" />
-          </p>
-          <p id="output" className="box1 sb6">
-            {this.state.text}
-            <span style={warning}>{this.state.warning}</span>
-          </p>
-        </div>
+        <Jaden text={this.state.text} warning={this.state.warning} />
       </div>
     );
   }
