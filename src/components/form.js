@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './button';
+import PropTypes from 'prop-types';
 
 const Form = ({ change, submit }) => {
   return (
@@ -13,5 +14,9 @@ const Form = ({ change, submit }) => {
     </form>
   )
 }
+Form.propTypes = {
+  change: PropTypes.func.isRequired,
+  submit: PropTypes.func.isRequired
+};
 
 export default Form;

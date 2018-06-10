@@ -1,5 +1,6 @@
 import React from 'react';
 import jaden from '../img/jaden-cutout.png';
+import PropTypes from 'prop-types';
 
 const Jaden = ({ text, warning }) => {
   const warningStyle = {
@@ -20,6 +21,9 @@ const Jaden = ({ text, warning }) => {
   )
 }
 
-
+Jaden.propTypes = {
+  text: PropTypes.string.isRequired,
+  warning: PropTypes.string.isRequired
+};
 
 export default Jaden;
