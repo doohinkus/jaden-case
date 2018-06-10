@@ -7,7 +7,7 @@ import Button from './button';
 Enzyme.configure({ adapter: new Adapter() });
 
 describe('Button', () => {
-  it('should render button', () => {
+  it('should pass text to the text prop and a function to the action prop', () => {
     const action = jest.fn();
     const text = "text";
     const output = shallow(
