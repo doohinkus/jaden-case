@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import jaden from './img/jaden-cutout.png';
+import Button from './components/button';
 
 class App extends Component {
   constructor(){
@@ -22,9 +23,6 @@ class App extends Component {
   }
   handleChange(e){
     e.preventDefault();
-    if (e.keyCode === 13) {
-      console.log('hit enter!!')
-    }
     const text = this.toJadenCase(e.target.value);
     const warning = this.state.text.split(" ").join("").length < 140 ? '' : 'Over 140 characters!'
     this.setState({
@@ -50,13 +48,12 @@ class App extends Component {
             <input type="text" onChange={this.handleChange} className="form-control w-100" id="inputText" placeholder="Tweet" />
           </div>
           <div className="form-group col-sm-4">
-            <button className="btn btn-primary btn-block" target="_blank"  onClick={this.handleSubmit}>Tweet</button>
+            <Button action={this.handleSubmit} text="Tweet" />
           </div>
-
         </form>
         <div className="jaden">
           <p className="text-center">
-            <img src={jaden} className="img-fluid img-thumbnail clearbg" />
+            <img src={jaden} alt="jaden smith" className="img-fluid img-thumbnail clearbg" />
           </p>
           <p id="output" className="box1 sb6">
             {this.state.text}
