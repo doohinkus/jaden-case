@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import Button from './components/button';
 import Jaden from './components/jaden';
 import Form from './components/form';
 import Header from './components/header';
