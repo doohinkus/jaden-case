@@ -15,4 +15,4 @@ describe('Button', () => {
     );
     expect(shallowToJson(output)).toMatchSnapshot();
   });
-})
+});
