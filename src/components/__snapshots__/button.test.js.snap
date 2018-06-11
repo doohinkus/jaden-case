@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should pass text to the text prop and a function to the action prop 1`] = `
+<button
+  className="btn btn-primary btn-block"
+  onClick={[Function]}
+  target="_blank"
+>
+  text
+</button>
+`;
