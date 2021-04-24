@@ -4,4 +4,3 @@
 
 [Jaden Case Tweet](https://scrawny-sticks.surge.sh/)
 
-[Jaden Case Blog Post](http://rafaeliscoding.com/2018/02/jaden-case-es6-string-prototype/)
